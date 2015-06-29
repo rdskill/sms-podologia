@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
 
@@ -49,7 +49,8 @@
         var mapOptions = {
           center: myLatlng,
           zoom: 17,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          scrollwheel: false
         }
         var map = new google.maps.Map(mapCanvas, mapOptions)
 
@@ -87,13 +88,6 @@
 <body id="page-top">
 
     <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.3";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
@@ -134,7 +128,6 @@
         <div class="header-content">
             <div class="header-content-inner">
                 <h1><img src="img/logo_quadrado.png" height="50%" width="40%"></h1>
-                <hr>
                 <a href="#sobre" class="btn btn-primary btn-xl page-scroll">Descubra mais</a>
             </div>
         </div>
@@ -146,7 +139,7 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">SMS Podologia</h2>
                     <hr class="light">
-                    <p class="text-faded">A mais de 20 anos tratando clientes em São Paulo, a SMS Podologia vem oferecendo seus serviços com profissionais de saúde altamente qualificados e treinados para a prevenção, diagnóstico, tratamento e reabilitação das patologias dos pés. Os programas continuados de educação e especialização da carreira, garantem o melhor desempenho da sua função.</p>
+                    <p class="text-faded">A SMS Podologia vem oferecendo seus serviços com profissionais de saúde, atuando há mais de 20 anos, altamente qualificados e treinados para a prevenção, diagnóstico, tratamento e reabilitação das patologias dos pés.</p>
                     <a href="#servicos" class="btn btn-default btn-xl page-scroll">Serviços</a>
                 </div>
             </div>
@@ -166,28 +159,28 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
+                        <i class="fa fa-4x wow bounceIn text-primary"><img src="img/foot-blue.png" height="60" width="60"></i>
                         <h3>Calos</h3>
                         <p class="text-muted">Remoção do calo utilizando bisturi com lâmina descartável.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                        <i class="fa fa-4x wow bounceIn text-primary" data-wow-delay=".1s"><img src="img/foot-blue.png" height="60" width="60"></i>
                         <h3>Calosidades</h3>
                         <p class="text-muted">Retirada do excesso de calosidade promovendo conforto e bem-estar aos pés.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                        <i class="fa fa-4x wow bounceIn text-primary" data-wow-delay=".2s"><img src="img/foot-blue.png" height="60" width="60"></i>
                         <h3>Unha Encravada</h3>
                         <p class="text-muted">Remoção da espícula que está causando infecção e dor.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                        <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <i class="fa fa-4x wow bounceIn text-primary" data-wow-delay=".3s"><img src="img/foot-blue.png" height="60" width="60"></i>
                         <h3>Massagem Relaxante</h3>
                         <p class="text-muted">Relaxamento de toda a musculatura dos pés.</p>
                     </div>
@@ -199,8 +192,8 @@
     <section class="no-padding" id="fotos">
         <div class="container-fluid">
             <div class="row no-gutter">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                <div class="col-lg-4 col-sm-6" id="foto-1">
+                    <a href="#foto-1" class="portfolio-box">
                         <img src="img/portfolio/1.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -214,23 +207,23 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                <div class="col-lg-4 col-sm-6" id="foto-2">
+                    <a href="#foto-2" class="portfolio-box">
                         <img src="img/portfolio/2.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    ?
+                                    Área Interna
                                 </div>
                                 <div class="project-name">
-                                    ?
+                                    Gabinete
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                <div class="col-lg-4 col-sm-6" id="foto-3">
+                    <a href="#foto-3" class="portfolio-box">
                         <img src="img/portfolio/3.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -238,14 +231,14 @@
                                     Serviço
                                 </div>
                                 <div class="project-name">
-                                    Massagem
+                                    Massagem Relaxante
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                <div class="col-lg-4 col-sm-6" id="foto-4">
+                    <a href="#foto-4" class="portfolio-box">
                         <img src="img/portfolio/4.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
@@ -259,31 +252,31 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                <div class="col-lg-4 col-sm-6" id="foto-5">
+                    <a href="#foto-5" class="portfolio-box">
                         <img src="img/portfolio/5.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Aparelho
+                                    Material
                                 </div>
                                 <div class="project-name">
-                                    ?
+                                    Material Descartavel
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="#" class="portfolio-box">
+                <div class="col-lg-4 col-sm-6" id="foto-6">
+                    <a href="#foto-6" class="portfolio-box">
                         <img src="img/portfolio/6.jpg" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Aparelho
+                                    Auto Clave
                                 </div>
                                 <div class="project-name">
-                                    ?
+                                    Material Esterelizado
                                 </div>
                             </div>
                         </div>
@@ -293,7 +286,7 @@
         </div>
     </section>
 
-    <section id="contato">
+    <section id="contato" class="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -319,10 +312,16 @@
             <div class="col-lg-8 col-lg-offset-2 text-center">
                     <a href="http://facebook.com/smspodologia" target="_blank">
                         <img src="img/facebook.png"/>
-                    </a>
-                </div>
+                </a>
+            </div>
         </div>
     </section>
+
+     <nav id="bottomNav" class="navbar-default navbar-fixed-bottom">
+     <div class="text-center"> 
+        Tel: (11) 4301-9230
+        </div>
+    </nav>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
